@@ -32,17 +32,17 @@ public class Main {
         for (int i = 0; i < allSalary.length; i++) {
             salary2 += allSalary[i];
         }
-        double average= (double)salary2/allSalary.length;
+        double average = (double) salary2 / allSalary.length;
         System.out.printf("Средняя сумма трат за месяц составила %s рублей", average);
 
         System.out.println();
         System.out.println("Задача-4");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         char rev;
-        for (int i = 0; i < reverseFullName.length /2; i++) {
-            rev=reverseFullName[i];
-            reverseFullName[i] =reverseFullName[reverseFullName.length-1-i];
-            reverseFullName[reverseFullName.length-1-i]=rev;
+        for (int i = 0; i < reverseFullName.length / 2; i++) {
+            rev = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
+            reverseFullName[reverseFullName.length - 1 - i] = rev;
         }
         System.out.println(Arrays.toString(reverseFullName));
     }
