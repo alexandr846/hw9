@@ -13,14 +13,14 @@ public class Main {
         System.out.printf("Сумма трат за месяц составила %s рублей", salary);
         System.out.println();
         System.out.println("Задача-2");
-        int minSalary = allSalary[0] / 4;
-        int maxSalary = allSalary[0] / 4;
+        int minSalary = allSalary[0];
+        int maxSalary = allSalary[0];
         for (int i = 0; i < allSalary.length; i++) {
-            if (allSalary[i] / 4 < minSalary) {
-                minSalary = allSalary[i] / 4;
+            if (allSalary[i] < minSalary) {
+                minSalary = allSalary[i];
             }
-            if (allSalary[i] > maxSalary / 4) ;
-            maxSalary = allSalary[i] / 4;
+            if (allSalary[i] > maxSalary)
+                maxSalary = allSalary[i];
         }
         System.out.printf("Минимальная сумма трат за неделю составила %s рублей", minSalary);
         System.out.println();
@@ -38,12 +38,10 @@ public class Main {
         System.out.println();
         System.out.println("Задача-4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        char rev;
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            rev = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
-            reverseFullName[reverseFullName.length - 1 - i] = rev;
-        }
-        System.out.println(Arrays.toString(reverseFullName));
+        char rev = 0;
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            rev += reverseFullName[i];
+
+        System.out.print(reverseFullName[i]);
     }
-}
+}}
